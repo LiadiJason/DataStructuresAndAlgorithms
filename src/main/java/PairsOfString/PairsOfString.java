@@ -11,57 +11,56 @@ public class PairsOfString {
     /**
      * Print all strings in array with duplicate allowed
      * */
-    public static void pairsOfStringInArrayDuplicateAllowed(String[] array) {
-        System.out.println("Pairs of String:");
+    public static String pairsOfStringInArrayDuplicateAllowed(String[] array) {
+        StringBuilder result = new StringBuilder();
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
-                System.out.println("[" + array[i] + "," + array[j] + "]");
+                result.append("[").append(array[i]).append(",").append(array[j]).append("]\n");
             }
         }
+        return result.toString();
     }
 
     /**
      * Print all strings in array with duplicate allowed with enhanced for
-     * */
-    public static void pairsOfStringInArrayEnhancedFor(String[] array) {
-        System.out.println("Pairs of String:");
+     */
+    public static String pairsOfStringInArrayEnhancedFor(String[] array) {
+        StringBuilder result = new StringBuilder();
         for (String i : array) {
             for (String j : array) {
-                System.out.println("[" + i + "," + j + "]");
-
+                result.append("[").append(i).append(",").append(j).append("]\n");
             }
         }
+        return result.toString();
     }
 
     /**
      * Print all strings in array with duplicate not allowed
-     * */
-    public static void pairsOfStringInArrayDuplicateNotAllowed(String[] array) {
-        System.out.println("Pairs of String:");
+     */
+    public static String pairsOfStringInArrayDuplicateNotAllowed(String[] array) {
+        StringBuilder result = new StringBuilder();
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
                 if (!array[i].equals(array[j])) {
-                    System.out.println("[" + array[i] + "," + array[j] + "]");
+                    result.append("[").append(array[i]).append(",").append(array[j]).append("]\n");
                 }
             }
         }
+        return result.toString();
     }
 
     /**
      * Print all strings in array with duplicate not allowed and reverse not allowed
-     * */
-    public static void pairsOfStringInArrayDuplicateNotAllowedAndReverseNotAllowed(String[] array) {
-        System.out.println("Pairs of String:");
-        for (String s : array) {
-            for (String value : array) {
-                if (!s.equals(value) && s.compareTo(value) <= 0) {
-                    System.out.println("[" + s + "," + value + "]");
+     */
+    public static String pairsOfStringInArrayDuplicateNotAllowedAndReverseNotAllowed(String[] array) {
+        StringBuilder result = new StringBuilder();
+        for (String i : array) {
+            for (String j : array) {
+                if (!i.equals(j) && i.compareTo(j) <= 0) {
+                    result.append("[").append(i).append(",").append(j).append("]\n");
                 }
             }
         }
-    }
-
-    public static void main(String[] args) {
-        pairsOfStringInArrayDuplicateNotAllowedAndReverseNotAllowed(array);
+        return result.toString();
     }
 }
