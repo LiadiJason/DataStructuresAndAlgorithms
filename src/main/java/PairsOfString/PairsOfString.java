@@ -11,7 +11,7 @@ public class PairsOfString {
     /**
      * Print all strings in array with duplicate allowed
      * */
-    public static String pairsOfStringInArrayDuplicateAllowed(String[] array) {
+    public String pairsOfStringInArrayDuplicateAllowed(String[] array) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
@@ -24,7 +24,7 @@ public class PairsOfString {
     /**
      * Print all strings in array with duplicate allowed with enhanced for
      */
-    public static String pairsOfStringInArrayEnhancedFor(String[] array) {
+    public String pairsOfStringInArrayEnhancedFor(String[] array) {
         StringBuilder result = new StringBuilder();
         for (String i : array) {
             for (String j : array) {
@@ -37,7 +37,7 @@ public class PairsOfString {
     /**
      * Print all strings in array with duplicate not allowed
      */
-    public static String pairsOfStringInArrayDuplicateNotAllowed(String[] array) {
+    public String pairsOfStringInArrayDuplicateNotAllowed(String[] array) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
@@ -52,7 +52,7 @@ public class PairsOfString {
     /**
      * Print all strings in array with duplicate not allowed and reverse not allowed
      */
-    public static String pairsOfStringInArrayDuplicateNotAllowedAndReverseNotAllowed(String[] array) {
+    public String pairsOfStringInArrayDuplicateNotAllowedAndReverseNotAllowed(String[] array) {
         StringBuilder result = new StringBuilder();
         for (String i : array) {
             for (String j : array) {
