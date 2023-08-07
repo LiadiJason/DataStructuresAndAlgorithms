@@ -1,9 +1,7 @@
 package PairsOfString;
 
-
 import org.junit.Test;
 
-import static PairsOfString.PairsOfString.array;
 import static org.testng.Assert.assertEquals;
 
 
@@ -17,7 +15,7 @@ public class PairsOfStringTest {
 
     @Test
     public void pairsOfStringInArrayDuplicateAllowed_Success() {
-        String result = PairsOfString.pairsOfStringInArrayDuplicateAllowed(array);
+        String result = pairsOfString.pairsOfStringInArrayDuplicateAllowed(mockListOfString());
 
         String expectedOutput = "[A,A]\n" +
                 "[A,B]\n" +
@@ -33,7 +31,7 @@ public class PairsOfStringTest {
 
     @Test
     public void pairsOfStringInArrayEnhancedFor_Success() {
-        String result = PairsOfString.pairsOfStringInArrayEnhancedFor(array);
+        String result = pairsOfString.pairsOfStringInArrayEnhancedFor(mockListOfString());
 
         String expectedOutput = "[A,A]\n" +
                 "[A,B]\n" +
@@ -49,7 +47,7 @@ public class PairsOfStringTest {
 
     @Test
     public void pairsOfStringInArrayDuplicateNotAllowed_Success() {
-        String result = PairsOfString.pairsOfStringInArrayDuplicateNotAllowed(array);
+        String result = pairsOfString.pairsOfStringInArrayDuplicateNotAllowed(mockListOfString());
 
         String expectedOutput = "[A,B]\n" +
                 "[A,C]\n" +
@@ -62,11 +60,19 @@ public class PairsOfStringTest {
 
     @Test
     public void pairsOfStringInArrayDuplicateNotAllowedAndReverseNotAllowed_Success() {
-        String result = PairsOfString.pairsOfStringInArrayDuplicateNotAllowedAndReverseNotAllowed(array);
+        String result = pairsOfString.pairsOfStringInArrayDuplicateNotAllowedAndReverseNotAllowed(mockListOfString());
 
         String expectedOutput = "[A,B]\n" +
                 "[A,C]\n" +
                 "[B,C]\n";
         assertEquals(expectedOutput, result);
+    }
+
+    public static String[] mockListOfString() {
+        String[] alphabetArray = new String[3];
+        alphabetArray[0] = "A";
+        alphabetArray[1] = "B";
+        alphabetArray[2] = "C";
+        return alphabetArray;
     }
 }
