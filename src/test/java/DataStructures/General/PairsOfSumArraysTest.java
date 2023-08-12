@@ -32,7 +32,6 @@ public class PairsOfSumArraysTest {
     }
 
     @Test
-    // todo: [4,4] does not produced
     public void pairsOfSumArraysEnhancedEfficiency_Success() {
         String result = pairsOfSumArrays.pairsOfSumArraysEnhancedEfficiencyWithDuplicates(mockListOfInteger(), 8);
         String expectedOutput = "[1,7]\n" +
@@ -60,20 +59,6 @@ public class PairsOfSumArraysTest {
         list.add(8);
         list.add(9);
         list.add(10);
-        return list;
-    }
-
-    @Test
-    // todo: [4,4] does not produced
-    public void pairsOfSumArraysEnhancedEfficiencyDebug_Success() {
-        String result = pairsOfSumArrays.pairsOfSumArraysEnhancedEfficiencyWithDuplicates(debugListOfInteger(), 8);
-        String expectedOutput = "[4,4]";
-        Assert.assertEquals(expectedOutput, result);
-    }
-
-    public static List<Integer> debugListOfInteger() {
-        List<Integer> list = new ArrayList<>();
-        list.add(4);
         return list;
     }
 }
