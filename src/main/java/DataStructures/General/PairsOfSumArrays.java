@@ -1,4 +1,4 @@
-package DataStructures;
+package DataStructures.General;
 
 import java.util.*;
 
@@ -66,6 +66,10 @@ public class PairsOfSumArrays {
             if (frequencyMap.containsKey(complement) && frequencyMap.get(complement) > 0) {
                 resultPairs.add("[" + Math.min(num, complement) + "," + Math.max(num, complement) + "]");
                 frequencyMap.put(complement, frequencyMap.get(complement) - 1);
+            }
+
+            if (num == complement) {
+                resultPairs.add("[" + num + "," + num + "]");
             }
 
             frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);

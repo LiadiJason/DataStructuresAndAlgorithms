@@ -1,5 +1,6 @@
-package PairsOfString;
+package DataStructures.General;
 
+import DataStructures.General.PairsOfString;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import static org.testng.Assert.assertEquals;
 
 /**
  * @author LiadiJason
- * @version $Id: PairsOfString.PairsOfStringTest.java, 2023-08-7:35 PM LiadiJason
+ * @version $Id: DataStructures.General.PairsOfStringTest.java, 2023-08-7:35 PM LiadiJason
  */
 public class PairsOfStringTest {
 

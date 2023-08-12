@@ -1,5 +1,6 @@
-package DataStructures;
+package DataStructures.General;
 
+import DataStructures.General.FindCommonArrays;
 import org.junit.Test;
 
 import java.util.ArrayList;

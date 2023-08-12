@@ -1,10 +1,10 @@
-package PairsOfString;
+package DataStructures.General;
 
 import java.util.List;
 
 /**
  * @author LiadiJason
- * @version $Id: PairsOfString.PairsOfString.java, 2023-08-7:34 PM LiadiJason
+ * @version $Id: DataStructures.General.PairsOfString.java, 2023-08-7:34 PM LiadiJason
  */
 public class PairsOfString {
 
