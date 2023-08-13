@@ -1,4 +1,4 @@
-package DataStructures.General;
+package DataStructures.GeneralTest;
 
 import DataStructures.General.PairsOfString;
 import org.junit.Test;

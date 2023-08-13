@@ -1,4 +1,4 @@
-package DataStructures.General;
+package DataStructures.GeneralTest;
 
 import DataStructures.General.FindCommonArrays;
 import org.junit.Test;
