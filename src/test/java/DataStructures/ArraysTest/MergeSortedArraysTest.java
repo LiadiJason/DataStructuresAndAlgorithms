@@ -17,8 +17,15 @@ public class MergeSortedArraysTest {
     MergeSortedArrays mergeSortedArrays = new MergeSortedArrays();
 
     @Test
-    public void reverseString_Success() {
-        List<Integer> result = mergeSortedArrays.mergeSortedArrays(mockFirstList(), mockSecondList());
+    public void reverseStringWithWhileLoop_Success() {
+        List<Integer> result = mergeSortedArrays.mergeSortedArrays_WhileLoop(mockFirstList(), mockSecondList());
+        List<Integer> expectedOutput = new ArrayList<>(Arrays.asList(0,3,4,4,6,30,31));
+        Assert.assertEquals(expectedOutput, result);
+    }
+
+    @Test
+    public void reverseStringWithForLoop_Success() {
+        List<Integer> result = mergeSortedArrays.mergeSortedArrays_ForLoop(mockFirstList(), mockSecondList());
         List<Integer> expectedOutput = new ArrayList<>(Arrays.asList(0,3,4,4,6,30,31));
         Assert.assertEquals(expectedOutput, result);
     }

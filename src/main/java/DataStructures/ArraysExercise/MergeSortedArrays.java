@@ -8,7 +8,7 @@ import java.util.List;
  * @version $Id: MergeSortedArrays.java, 2023-08-10:50 AM LiadiJason
  */
 public class MergeSortedArrays {
-    public List<Integer> mergeSortedArrays(List<Integer> firstList, List<Integer> secondList) {
+    public List<Integer> mergeSortedArrays_WhileLoop(List<Integer> firstList, List<Integer> secondList) {
         List<Integer> result = new ArrayList<>();
 
         int i = 0, j = 0;
@@ -39,6 +39,32 @@ public class MergeSortedArrays {
         while (j < secondList.size()) {
             result.add(secondList.get(j));
             j++;
+        }
+
+        return result;
+    }
+
+    public List<Integer> mergeSortedArrays_ForLoop(List<Integer> firstList, List<Integer> secondList) {
+        List<Integer> result = new ArrayList<>();
+
+        int i = 0, j = 0;
+
+        for (; i < firstList.size() && j < secondList.size();) {
+            if (firstList.get(i) < secondList.get(j)) {
+                result.add(firstList.get(i));
+                i++;
+            } else {
+                result.add(secondList.get(j));
+                j++;
+            }
+        }
+
+        for (; i < firstList.size(); i++) {
+            result.add(firstList.get(i));
+        }
+
+        for (; j < secondList.size(); j++) {
+            result.add(secondList.get(j));
         }
 
         return result;
