@@ -1,4 +1,4 @@
-package DataStructures.ArraysExercise;
+package data_structures.arrays;
 
 /**
  * @author LiadiJason

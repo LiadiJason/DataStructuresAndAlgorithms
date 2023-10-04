@@ -1,6 +1,5 @@
-package DataStructures.GeneralTest;
+package data_structures.general;
 
-import DataStructures.General.PairsOfSumArrays;
 import org.junit.Assert;
 import org.junit.Test;
 

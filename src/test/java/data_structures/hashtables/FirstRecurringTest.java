@@ -1,6 +1,5 @@
-package DataStructures.HashTablesTest;
+package data_structures.hashtables;
 
-import DataStructures.HashTables.FirstRecurring;
 import org.junit.Assert;
 import org.junit.Test;
 

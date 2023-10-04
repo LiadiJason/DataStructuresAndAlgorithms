@@ -1,6 +1,5 @@
-package DataStructures.GeneralTest;
+package data_structures.general;
 
-import DataStructures.General.PairsOfString;
 import org.junit.Test;
 
 import java.util.ArrayList;

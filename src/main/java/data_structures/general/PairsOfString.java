@@ -1,4 +1,4 @@
-package DataStructures.General;
+package data_structures.general;
 
 import java.util.List;
 

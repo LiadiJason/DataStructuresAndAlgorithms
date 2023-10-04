@@ -1,6 +1,5 @@
-package DataStructures.ArraysTest;
+package data_structures.arrays;
 
-import DataStructures.ArraysExercise.ReverseString;
 import org.junit.Assert;
 import org.junit.Test;
 
